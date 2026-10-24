@@ -21,17 +21,26 @@ I turn curiosity into hands-on projects, exploring how software, hardware, and n
 
 🎓 **Class 12 student · Computer Science–Mathematics**
 
-I'm interested in how the systems behind everyday technology actually work: how Linux services run, how networks carry traffic, how microcontrollers communicate, and how software and hardware behave when connected together.
+I'm a student developer from Tamil Nadu who enjoys understanding how technology works beneath the surface. I explore Linux systems, networking, web development, microcontrollers, home automation, and mechanical design through practical projects.
 
-I learn best by making things, testing assumptions, troubleshooting failures, and documenting what I discover. My projects span web development, Linux home-lab experiments, IoT automation, and mechanical design.
+I learn by building, testing, troubleshooting, and documenting. Whether I'm configuring a home server, experimenting with an ESP8266, designing a mechanical reel, or improving a website, my goal is to understand not only *what works*, but *why it works*.
 
-**Long-term direction:** cybersecurity, especially SOC analysis and ethical hacking. I'm building the fundamentals first through Linux, networking, programming, security concepts, and authorised lab practice.
+### What interests me
 
-### My working approach
+- 🐧 **Linux & self-hosting:** Ubuntu Server, Raspberry Pi, Docker, and running useful services on my own lab systems.
+- 🌐 **Networking:** learning TCP/IP, DNS, routing, network diagnostics, and how devices communicate.
+- 🔌 **IoT & automation:** ESP8266, ESPHome, MQTT, relays, and Home Assistant experiments.
+- 💻 **Web development:** building and maintaining websites with HTML, CSS, and JavaScript.
+- ⚙️ **Engineering design:** mechanical concepts, measurements, technical documentation, and iterative prototyping.
+- 🛡️ **Cybersecurity:** developing a foundation for a future career in SOC analysis and ethical hacking.
+
+### How I work
 
 **LEARN → DESIGN → BUILD → TEST → TROUBLESHOOT → DOCUMENT → IMPROVE**
 
-I value practical understanding over claiming expertise. A broken relay, a misconfigured service, or a layout bug is an opportunity to understand the system more deeply.
+I'm still developing my skills, and I prefer honest progress over pretending to know everything. Each project gives me another chance to improve my technical thinking, problem-solving, and attention to detail.
+
+My long-term goal is to grow into a cybersecurity professional with strong Linux, networking, and investigation skills. I practise security concepts in authorised labs and only test systems where I have permission.
 
 ## 02 / PROJECTS FROM THE WORKBENCH
 
@@ -91,55 +100,7 @@ A web-development project for presenting venue information online.
 
 </details>
 
-## 03 / PORTFOLIO ARCHITECTURE
-
-The portfolio is a lightweight static website using semantic HTML, CSS, and native JavaScript ES modules. It does not need a frontend framework or build step to run on GitHub Pages.
-
-```text
-portfolio/
-├── index.html
-├── src/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       ├── main.js
-│       ├── dom.js
-│       └── modules/
-│           ├── theme and navigation
-│           ├── scrolling and visual effects
-│           ├── interactive terminal
-│           ├── contact form
-│           ├── telemetry simulation
-│           ├── GitHub repository cards
-│           └── resume printing
-├── docs/
-│   └── ARCHITECTURE.md
-└── .github/
-    └── workflows/
-```
-
-### How the pieces work together
-
-- **Structure:** `index.html` defines the sections, navigation, project content, and accessible labels.
-- **Presentation:** `src/css/style.css` contains design tokens, component styles, responsive layouts, animation rules, and print styles.
-- **Entry point:** `src/js/main.js` imports the feature modules in a predictable order.
-- **Shared helpers:** `src/js/dom.js` provides common DOM query utilities.
-- **Feature modules:** `src/js/modules/` separates theme switching, navigation, visual effects, terminal interaction, form handling, repository loading, and other behaviours.
-- **Documentation:** `docs/ARCHITECTURE.md` explains the structure and how to extend it.
-
-### Why this structure?
-
-1. **Maintainability:** each feature has a clear place to live.
-2. **Separation of concerns:** markup, styles, and behaviour are not mixed into one file.
-3. **Easier debugging:** a problem can be traced to a smaller feature module.
-4. **Room to grow:** new portfolio features can be added without rewriting the entire application.
-5. **Simple deployment:** GitHub Pages can serve the static files directly.
-
-The portfolio's telemetry panel is a **visual simulation**, not a live connection to my home server. The GitHub project panel relies on the public GitHub API and can be affected by rate limits. Decorative animation should never be more important than readable content and working navigation.
-
-[**Read the full architecture guide ↗**](https://github.com/neoxey/portfolio/blob/main/docs/ARCHITECTURE.md)
-
-## 04 / TOOLS IN MY WORKBENCH
+## 03 / TOOLS IN MY WORKBENCH
 
 <div align="center">
 
@@ -168,7 +129,7 @@ The portfolio's telemetry panel is a **visual simulation**, not a live connectio
 
 </div>
 
-## 05 / WHAT I'M WORKING TOWARD
+## 04 / WHAT I'M WORKING TOWARD
 
 | Area | Current learning focus |
 |---|---|
@@ -182,7 +143,7 @@ The portfolio's telemetry panel is a **visual simulation**, not a live connectio
 
 <sub>I'm still learning these areas and building my skills through practice. Security testing belongs in authorised labs and on systems I have permission to assess.</sub>
 
-## 06 / GITHUB SIGNAL
+## 05 / GITHUB SIGNAL
 
 <div align="center">
 <img height="155" src="https://github-readme-stats.vercel.app/api?username=neoxey&show_icons=true&hide_border=true&bg_color=07111F&title_color=00D9FF&text_color=E6F1FF&icon_color=00D9FF" alt="GitHub repository and activity statistics" />
