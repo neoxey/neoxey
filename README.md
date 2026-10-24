@@ -10,22 +10,28 @@
 
 I turn curiosity into hands-on projects, exploring how software, hardware, and networks work together. From Linux home-lab experiments to mechanical design and home automation, I'm learning by building, testing, fixing, and documenting.
 
-[![Portfolio](https://img.shields.io/badge/EXPLORE_MY_PORTFOLIO-00D9FF?style=for-the-badge&logo=googlechrome&logoColor=07111F)](https://neoxey.github.io/portfolio/)
+[![Explore my portfolio](https://img.shields.io/badge/EXPLORE_MY_PORTFOLIO-00D9FF?style=for-the-badge&logo=googlechrome&logoColor=07111F)](https://neoxey.github.io/portfolio/)
 [![GitHub Projects](https://img.shields.io/badge/PROJECTS-123B5D?style=for-the-badge&logo=github&logoColor=white)](https://github.com/neoxey?tab=repositories)
 
 </div>
 
 ---
 
-## 01 / WHO I AM
+## 01 / ABOUT ME
 
 🎓 **Class 12 student · Computer Science–Mathematics**
 
-I'm fascinated by the systems behind the screen: how Linux services run, how devices communicate, how automation behaves in the real world, and how systems can be made more secure.
+I'm interested in how the systems behind everyday technology actually work: how Linux services run, how networks carry traffic, how microcontrollers communicate, and how software and hardware behave when connected together.
 
-My long-term direction is **cybersecurity, with a focus on SOC analysis and ethical hacking**. I'm strengthening the fundamentals first: networking, Linux, programming, and security concepts.
+I learn best by making things, testing assumptions, troubleshooting failures, and documenting what I discover. My projects span web development, Linux home-lab experiments, IoT automation, and mechanical design.
 
-**LEARN THE FUNDAMENTALS** → **BUILD PROJECTS** → **TEST & TROUBLESHOOT** → **DOCUMENT & IMPROVE**
+**Long-term direction:** cybersecurity, especially SOC analysis and ethical hacking. I'm building the fundamentals first through Linux, networking, programming, security concepts, and authorised lab practice.
+
+### My working approach
+
+**LEARN → DESIGN → BUILD → TEST → TROUBLESHOOT → DOCUMENT → IMPROVE**
+
+I value practical understanding over claiming expertise. A broken relay, a misconfigured service, or a layout bug is an opportunity to understand the system more deeply.
 
 ## 02 / PROJECTS FROM THE WORKBENCH
 
@@ -46,7 +52,7 @@ A drill-driven reel concept for winding 40 metres of flat drip-irrigation tape, 
 ### 🖥️ Raspberry Pi Home Lab
 **LINUX / NETWORKING / SELF-HOSTING**
 
-Experiments with Raspberry Pi and an older laptop as small server platforms, exploring Linux, Docker, Pi-hole, Samba, Nginx, Tailscale, and Home Assistant-related setups.
+Experiments with Raspberry Pi and an older laptop as small server platforms. Technologies explored include Linux, Docker, Pi-hole, Samba, Nginx, Tailscale, and Home Assistant-related services.
 
 [**Explore my repositories ↗**](https://github.com/neoxey?tab=repositories)
 
@@ -58,7 +64,7 @@ Experiments with Raspberry Pi and an older laptop as small server platforms, exp
 ### 🔌 IoT & Home Automation
 **ESP8266 / ESPHome / MQTT**
 
-Microcontroller and automation experiments with relays and Home Assistant. I focus on understanding device communication, reliable triggers, and the difference between software state and physical behaviour.
+Microcontroller and automation experiments involving sensors, relays, MQTT, and Home Assistant. I focus on device communication, reliable triggers, and debugging mismatches between software state and physical behaviour.
 
 [**Explore my repositories ↗**](https://github.com/neoxey?tab=repositories)
 
@@ -66,11 +72,11 @@ Microcontroller and automation experiments with relays and Home Assistant. I foc
 <td width="50%" valign="top">
 
 ### 🌐 Personal Portfolio
-**HTML / CSS / WEB DESIGN**
+**HTML / CSS / JAVASCRIPT**
 
-My personal website for presenting my projects, skills, and technical interests while continuing to improve my web development skills.
+My portfolio presents my projects, interests, and learning journey. Its codebase is organised into separate HTML, CSS, and JavaScript modules so individual features can be maintained without turning the whole site into one giant script.
 
-[**Visit the portfolio ↗**](https://neoxey.github.io/portfolio/) · [Source code](https://github.com/neoxey/portfolio)
+[**Visit the live portfolio ↗**](https://neoxey.github.io/portfolio/) · [Source code](https://github.com/neoxey/portfolio)
 
 </td>
 </tr>
@@ -85,7 +91,55 @@ A web-development project for presenting venue information online.
 
 </details>
 
-## 03 / TOOLS IN MY WORKBENCH
+## 03 / PORTFOLIO ARCHITECTURE
+
+The portfolio is a lightweight static website using semantic HTML, CSS, and native JavaScript ES modules. It does not need a frontend framework or build step to run on GitHub Pages.
+
+```text
+portfolio/
+├── index.html
+├── src/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       ├── main.js
+│       ├── dom.js
+│       └── modules/
+│           ├── theme and navigation
+│           ├── scrolling and visual effects
+│           ├── interactive terminal
+│           ├── contact form
+│           ├── telemetry simulation
+│           ├── GitHub repository cards
+│           └── resume printing
+├── docs/
+│   └── ARCHITECTURE.md
+└── .github/
+    └── workflows/
+```
+
+### How the pieces work together
+
+- **Structure:** `index.html` defines the sections, navigation, project content, and accessible labels.
+- **Presentation:** `src/css/style.css` contains design tokens, component styles, responsive layouts, animation rules, and print styles.
+- **Entry point:** `src/js/main.js` imports the feature modules in a predictable order.
+- **Shared helpers:** `src/js/dom.js` provides common DOM query utilities.
+- **Feature modules:** `src/js/modules/` separates theme switching, navigation, visual effects, terminal interaction, form handling, repository loading, and other behaviours.
+- **Documentation:** `docs/ARCHITECTURE.md` explains the structure and how to extend it.
+
+### Why this structure?
+
+1. **Maintainability:** each feature has a clear place to live.
+2. **Separation of concerns:** markup, styles, and behaviour are not mixed into one file.
+3. **Easier debugging:** a problem can be traced to a smaller feature module.
+4. **Room to grow:** new portfolio features can be added without rewriting the entire application.
+5. **Simple deployment:** GitHub Pages can serve the static files directly.
+
+The portfolio's telemetry panel is a **visual simulation**, not a live connection to my home server. The GitHub project panel relies on the public GitHub API and can be affected by rate limits. Decorative animation should never be more important than readable content and working navigation.
+
+[**Read the full architecture guide ↗**](https://github.com/neoxey/portfolio/blob/main/docs/ARCHITECTURE.md)
+
+## 04 / TOOLS IN MY WORKBENCH
 
 <div align="center">
 
@@ -114,20 +168,21 @@ A web-development project for presenting venue information online.
 
 </div>
 
-## 04 / WHAT I'M WORKING TOWARD
+## 05 / WHAT I'M WORKING TOWARD
 
-<table>
-<tr><td>🐧 **Linux**</td><td>Services, permissions, logs, SSH, backups, and server hardening</td></tr>
-<tr><td>🌐 **Networking**</td><td>TCP/IP, subnetting, DNS, routing, and packet analysis</td></tr>
-<tr><td>🐍 **Python**</td><td>Programming fundamentals, scripts, APIs, and practical automation</td></tr>
-<tr><td>🛡️ **Cybersecurity**</td><td>Security fundamentals, authorised lab practice, and vulnerability management</td></tr>
-<tr><td>🔎 **SOC skills**</td><td>Log analysis, alert triage, investigation, and incident-response basics</td></tr>
-<tr><td>🔌 **IoT**</td><td>Reliable device communication, automation, and hardware/software debugging</td></tr>
-</table>
+| Area | Current learning focus |
+|---|---|
+| 🐧 **Linux** | Services, permissions, logs, SSH, backups, and server hardening |
+| 🌐 **Networking** | TCP/IP, subnetting, DNS, routing, and packet analysis |
+| 🐍 **Python** | Programming fundamentals, scripts, APIs, and practical automation |
+| 🛡️ **Cybersecurity** | Security fundamentals, authorised lab practice, and vulnerability management |
+| 🔎 **SOC skills** | Log analysis, alert triage, investigation, and incident-response basics |
+| 🔌 **IoT** | Reliable device communication, automation, and hardware/software debugging |
+| 🧱 **Engineering design** | Measurements, documentation, CAD concepts, and iterative prototyping |
 
 <sub>I'm still learning these areas and building my skills through practice. Security testing belongs in authorised labs and on systems I have permission to assess.</sub>
 
-## 05 / GITHUB SIGNAL
+## 06 / GITHUB SIGNAL
 
 <div align="center">
 <img height="155" src="https://github-readme-stats.vercel.app/api?username=neoxey&show_icons=true&hide_border=true&bg_color=07111F&title_color=00D9FF&text_color=E6F1FF&icon_color=00D9FF" alt="GitHub repository and activity statistics" />
